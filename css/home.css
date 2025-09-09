@@ -1,0 +1,72 @@
+/* ---------- Home Page ---------- */
+/* Hero Section */
+.hero {
+    position: relative;
+    text-align: center;
+    color: #fff;
+}
+
+.hero img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    filter: brightness(70%);
+    border-bottom: 4px solid #1e3a8a;
+}
+
+.hero figcaption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+/* Info Cards Section */
+.info-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    padding: 2rem;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    padding: 1.5rem;
+    text-align: center;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.card h2 {
+    color: #1e3a8a;
+    margin-bottom: 0.5rem;
+}
+
+.about {
+    text-align: center;
+    padding: 2rem;
+    background-color: #f4f4f4;
+}
+
+.about a {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 20px;
+    background-color: #1e3a8a;
+    border-radius: 8px;
+    display: inline-block;
+    margin-top: 1rem;
+    transition: background 0.3s ease;
+}
+
+.about a:hover {
+    background-color: #0f1f4c;
+}
